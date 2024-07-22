@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Wildscapes Gallery</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="agen" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- venobox css -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+  <!-- card slider -->
+  <link rel="stylesheet" href="plugins/card-slider/css/style.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .section-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px; /* Adjust this value as needed */
+      color: #333;
+    }
+    .lead {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      color: #333;
+    }
+    .section-border {
+      width: 60%;
+      height: 2px;
+      background-color: #333;
+      margin: 20px auto;
+    }
+    .col-lg-10 {
+      max-width: 80%;
+      margin: auto;
+    }
+    .card {
+    position: relative;
+    overflow: hidden;
+    max-height: 250px; /* Initially limit the height */
+    transition: max-height 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .card:hover {
+    max-height: 1000px; /* Ensure this value is large enough to show all content */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+
+  .card-body {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  .card:hover .card-body {
+    opacity: 1;
+  }
+
+  .card-body p, .card-body ul {
+    color: white;
+  }
+  </style>
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/new_logo.png" alt="Wildscapes Logo" style="height: 150px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#purpose">Purpose</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Featured Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- banner -->
+<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+  data-background="images/banner/bg_index.png" id = "home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-1 text-white font-weight-bold font-primary">Wildscapes Photography Gallery</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /banner -->
+
+<!-- testimonial-slider -->
+<section class="section bg-secondary" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-5" style="font-size: 45px; color: white;">Our Gallery</h2>
+      </div>
+    </div>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div id="slider" class="ui-card-slider bg-contain">
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="images/testimonial/gallery1.jpg" alt="user-1" class="img-fluid card-img">
+                <div class="overlay-content">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="images/testimonial/gallery2.jpg" alt="user-1" class="img-fluid card-img">
+                <div class="overlay-content">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="images/testimonial/gallery3.jpg" alt="user-1" class="img-fluid card-img">
+                <div class="overlay-content">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="images/testimonial/gallery4.jpg" alt="user-1" class="img-fluid card-img">
+                <div class="overlay-content">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="images/testimonial/gallery5.jpg" alt="user-1" class="img-fluid card-img">
+                <div class="overlay-content">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="images/testimonial/gallery7.jpg" alt="user-1" class="img-fluid card-img">
+                <div class="overlay-content">
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- /testimonial-slider -->
+
+
+<section class="section" id="purpose">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title" style="font-size: 35px;">Our Purpose</h2>
+        <p class="lead">At Wildscapes Wildlife Gallery, our mission is to foster a profound appreciation and understanding of the rich flora and fauna that inhabit our planet. We aim to spread awareness about the incredible biodiversity that surrounds us, emphasizing the importance of conservation and environmental stewardship. Through captivating exhibits, educational programs, and immersive experiences, we strive to inspire individuals to connect with nature and take actionable steps towards preserving it for future generations. Our gallery serves as a beacon of knowledge and inspiration, highlighting the beauty and fragility of wildlife and natural habitats, and encouraging a harmonious coexistence between humans and the natural world.
+        </p>
+
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4 custom-card">
+            <div class="card-body text-center card-body-photo-studio">
+                <div class="position-relative">
+                    <i class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
+                    <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
+                </div>
+                <h4 class="section-title">wS Photo Studio</h4>
+                <p style="font-size: 11.5px; padding: 0 20px;">
+                  Wildscapes also offers a unique photo studio for premium portrait and product shoots. Here, you can capture moments and transform them into lasting memories. Our studio features a variety of backgrounds and amazing camera equipment.
+                </p>
+                <ul style="font-size: 11.5px; padding: 0 20px; text-align: left; display: inline-block;">
+                  <li>• Camera gears:
+                    <ul>
+                      <li>• Canon R5</li>
+                      <li>• Canon R 10</li>
+                      <li>• RF 100-500 mm lens</li>
+                      <li>• RF 24-105 mm lens F 4.5</li>
+                      <li>• RF 15-35 mm lens F 2.8</li>
+                      <li>• RF 200-800 mm lens</li>
+                    </ul>
+                  </li>
+                  <li>• Light diffusors</li>
+                  <li>• Tripod</li>
+                  <li>• Different backgrounds</li>
+                  <li>• Spacious AC hall</li>
+                  <li>• Change rooms</li>
+                  <li>• Tea/Coffee</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4 custom-card">
+          <div class="card-body text-center card-body-c-space">
+              <div class="position-relative">
+                  <i class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
+                  <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
+              </div>
+              <h4 class="section-title">The C Space</h4>
+              <h5 class="section-title" style="font-size: 9px;"><bold>Compassion / Courage/ Curiosity/ Conversations / Coaching</bold></h5>
+              <p style="font-size: 10px; padding: 0 20px;">
+                  C Space is a unique initiative where individuals are heard without judgment in a safe environment that encourages vulnerability. An expert panel of coaches creates a supportive atmosphere, using powerful questions and their presence and explore themselves.<br><br>
+                  This space also fosters deep conversations about life, providing moments for pause, reflection, and clearer direction. We’re launching an exciting experiment: a dedicated space for life-changing dialogues. Our passion for accessible coaching meets purpose here, inviting you to engage in meaningful, transformational conversations. Bring a partner or connect with one of our coaches. Coffee and fees are optional.<br><br>
+                  Coaching allows people to express themselves authentically and tap into their core to discover their own solutions. Every day, we face challenges—decisions and situations that can be difficult to navigate. Coaching acts as a catalyst, empowering individuals, whether students, homemakers, or working professionals, to uncover their solutions and become better versions of themselves.
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4 custom-card">
+          <div class="card-body text-center card-body-merchandise">
+            <div class="position-relative">
+              <i class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
+              <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
+            </div>
+            <h4 class="section-title">Merchandise</h4>
+    
+            <p style="font-size: 10px; padding: 0 20px;">
+              <h3 class="section-title">Coming Soon</h4>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- feature -->
+<section class="section bg-secondary position-relative">
+  <div class="bg-image overlay-secondary">
+    <img src="images/feature.jpg" alt="bg-image">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="images/feature.jpg" alt="feature-image" class="img-fluid">
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="text-white">We know What Bait to Use</h2>
+                <div class="section-border ml-0"></div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-vector mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">User Experience</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-layout mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">Responsive Layout</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-headphone-alt mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">Digital Solutions</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-ruler-pencil mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">Bootstrap 4x</h4>
+                    <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /feature -->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center" id="team">
+        <h2 class="section-title" style="font-size: 40px;">Our Team</h2>
+        <p>The minds and wits behind our operations.. </p>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <!-- <div class="card hover-shadow text-center"> -->
+          <img src="images/team/Smit_photo.jpg" alt="team-member" class="card-img-top">
+          <div class="card-body position-relative zindex-1">
+            <h4><a class="text-dark" href="team-single.html">Dr Smit Matalia</a></h4>
+            <i>Photographer and Founder, WildScapes</i>
+          </div>
+        <!-- </div> -->
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <!-- <div class="card hover-shadow text-center"> -->
+          <img src="images/team/hiral_photo.jpg" alt="team-member" class="card-img-top">
+          <div class="card-body position-relative zindex-1">
+            <h4><a class="text-dark" href="team-single.html">Mrs Hiral Matalia</a></h4>
+            <i>Founder and Lead Coach, CSpace</i>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section class="section-lg position-relative bg-cover" data-background="images/backgrounds/about-bg.jpg" id="about">
+  <img src="images/backgrounds/about-bg-overlay.png" alt="overlay" class="overlay-image img-fluid">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-6 col-md-8 col-sm-7 col-8">
+        <h2 class="section-title text-light mb-4" style="font-size: 35px;" >Who We Are</h2>
+        <p class="text-light mb-4">WildScapes is a passion project by Dr Smit Matalia. It is a vivid collection and culimation of his journey in wildlife photography. 
+          Through his memorable adventures, he has captured some truly dramatic and beautiful snapshots of nature. As a nature lover and an aspiring naturalist himself, he also aims to
+          spread awarness about the variety of beautiful flora and fauna around the world, especially in the vivid landscapes of India. 
+
+          <br>
+          <br>
+          <br>
+          <br>
+          Hope you guys join in this purposeful journey with us!
+        </p>
+
+      </div>
+      <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
+        <a class="venobox" data-autoplay="true" data-vbtype="video"
+          href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i
+            class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+<style>
+  .img-wrapper {
+    overflow: auto;
+    height: 682px;
+
+  }
+  .img-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire div */
+  }
+</style>
+
+<!-- project -->
+<section class="section" id="features">
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title" style="font-size: 40px;">Our Feature Works</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+
+    <div class="row no-gutters shuffle-wrapper">
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+            <img src="images/project/pic2.png" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Polar Bear, Artic Circle</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+          <div class="img-wrapper">
+            <img src="images/project/newpic.jpg" alt="project-image" class="img-fluid w-100">
+          </div>
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Lion, Mashatu Botswana</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+            <img src="images/project/pic3.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Elephant, Medikwe South Africa</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+            <img src="images/project/pic4.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Tiger, Satpura India</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 shuffle-item">
+        <div class="project-item">
+            <img src="images/project/pic5.jpg" alt="project-image" class="img-fluid w-100">
+          <div class="project-hover bg-secondary px-4 py-3">
+            <a href="#" class="text-white h4">Black-eared Shrike, Eagle Nest India</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /project -->
+
+<!-- pricing -->
+<section class="section pb-0" id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title" style="font-size: 40px;">Pricing</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">Small Frames</h4>
+            <p class="text-light mb-4">Perfect for picture groupings ! </p>
+            <p class="text-white mb-4">₹ <span class="display-3 font-weight-bold vertical-align-middle">2k - 3k</span></p>
+            <ul class="list-unstyled mb-5">
+              <li class="text-white mb-3">Dimensions: </li>
+              <li class="text-white mb-3">Available Frame types: </li>
+              <li class="text-white mb-3">Discounts on more than 4 frames</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Try it now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">Medium Frames</h4>
+            <p class="text-light mb-4">Our premium picks ! </p>
+            <p class="text-white mb-4">₹ <span class="display-3 font-weight-bold vertical-align-middle">5k - 15k</span></p>
+            <ul class="list-unstyled mb-5">
+              <li class="text-white mb-3">Dimensions: </li>
+              <li class="text-white mb-3">Available Frame types: </li>
+              <li class="text-white mb-3">Discounts specific to photographs</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Try it now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">Large Frames</h4>
+            <p class="text-light mb-4">All the gallery favourites !! </p>
+            <p class="text-white mb-4"> <span class="display-3 font-weight-bold vertical-align-middle">Custom</span></p>
+            <ul class="list-unstyled mb-5">
+              <li class="text-white mb-3">Dimensions: </li>
+              <li class="text-white mb-3">Available Frame types: </li>
+              <li class="text-white mb-3">Personalized Framing options available</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Try it now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /pricing -->
+
+<!-- blog -->
+<section class="section" id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title" style="font-size: 40px;">Latest in WildScapes</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+    
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card text-center">
+          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>Want to hear more about Wildscapes adventerous escapades?</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">Our Blog, realeasing soon.. </a>
+            <!-- <a href="#" class="btn btn-transparent">Read more</a> -->
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog -->
+
+<!-- footer -->
+<footer class="bg-secondary position-relative">
+  <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
+  <div class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 col-6">
+          <h4 class="text-white mb-5">About</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" id="contact-link" class="text-light d-block mb-3" style="font-size:20px ;">Contact</a></li>
+            <div id="dialing-numbers" style="display: none; color: white;">
+              <p style="color: white;"></pstyle>Dr Smit Matalia:    <a href="tel:+919825403344">  +91 9825403344</a></p>
+              <p style="color: white;"></pstyle>Mrs Hiral Matalia:    <a href="tel:+919879511219">  +91 9879511219</a></p>
+            </div>
+            <li><a href="#about" class="text-light d-block mb-3" style="font-size:20px">About us</a></li>
+            <li><a href="#blog" class="text-light d-block mb-3" style="font-size:20px">Blog</a></li>
+          </ul>
+        </div>
+        <script>
+          document.getElementById('contact-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var dialingNumbers = document.getElementById('dialing-numbers');
+            if (dialingNumbers.style.display === 'none') {
+              dialingNumbers.style.display = 'block';
+            } else {
+              dialingNumbers.style.display = 'none';
+            }
+          });
+        </script>
+        <div class="col-md-3 col-6">
+        </div>
+        <div class="col-md-6">
+          <div class="bg-white p-4">
+            <h3>Inquiries</h3>
+            <form action="https://formspree.io/f/xyzgkezy" method="POST">
+              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Full name">
+              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email address">
+              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Message"></textarea>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pb-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="text-light mb-0">Copyright &copy; 2019 a theme by <a class="text-gradient-primary" href="https://themefisher.com">themefisher.com</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-md-right text-center">
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a></li>
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- shuffle -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<!-- apear js -->
+<script src="plugins/counto/apear.js"></script>
+<!-- counter -->
+<script src="plugins/counto/counTo.js"></script>
+<!-- card slider -->
+<script src="plugins/card-slider/js/card-slider-min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
