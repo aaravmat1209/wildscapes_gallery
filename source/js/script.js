@@ -1,3 +1,10 @@
+/**
+ * WEBSITE: https://themefisher.com
+ * TWITTER: https://twitter.com/themefisher
+ * FACEBOOK: https://www.facebook.com/themefisher
+ * GITHUB: https://github.com/themefisher/
+ */
+
 (function ($) {
   'use strict';
 
@@ -132,5 +139,64 @@
     });
   }
 
+  
+
 
 })(jQuery);
+
+
+//event listener for text color change to black when contact is pressed
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll(".navbar-dark .navbar-nav .nav-link");
+  const sections = document.querySelectorAll("#contact, #team, #purpose, #features, #pricing, #blog, #about");
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  };
+
+  const observerCallback = function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.add("black-text"));
+      } else {
+        navLinks.forEach(link => link.classList.remove("black-text"));
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, options);
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var sections = document.querySelectorAll("section");
+  var menu_links = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", function() {
+    var current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 50) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    menu_links.forEach(link => {
+      link.classList.remove("active");
+      if (link.href.includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+});
+
+
+
+
