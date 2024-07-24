@@ -567,7 +567,7 @@ textarea.form-control {
   }
 }
 
-/* Change the color to black on click for contact */
+/*Change the color to black on click for contact */
 .navbar-dark .navbar-nav .nav-link.black-text {
   color: #000 !important;
 }
@@ -596,6 +596,11 @@ textarea.form-control {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+}
+
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
 }
 
 .banner {
