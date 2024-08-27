@@ -548,26 +548,23 @@ textarea.form-control {
 /* /social icons */
 .navigation {
   background-color: transparent;
-  padding: 10px 50px; /* Adjusted padding to reduce width */
-  transition: 0.3s ease;
+  padding: 10px 50px; /* Adjust as needed */
+  transition: background-color 0.3s ease; /* Ensure smooth transition */
 }
+
 .navigation.nav-bg {
-  background-color: rgba(2, 58, 30, 0.1); /* Transparent background with 80% opacity */
-  padding: 15px 50px; /* Adjusted padding to reduce width */
+  background-color: transparent; /* Keep the background transparent */
+  padding: 15px 50px; /* Adjust as needed */
 }
-@media (max-width: 991px) {
-  .navigation.nav-bg {
-    padding: 15px 20px;
-  }
-}
+
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #023a1e9f;
+    background-color: transparent; /* Ensure transparency on smaller screens */
   }
 }
 
-/* Change the color to black on click for contact */
+/*Change the color to black on click for contact */
 .navbar-dark .navbar-nav .nav-link.black-text {
   color: #000 !important;
 }
@@ -596,6 +593,11 @@ textarea.form-control {
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
+}
+
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
 }
 
 .banner {
